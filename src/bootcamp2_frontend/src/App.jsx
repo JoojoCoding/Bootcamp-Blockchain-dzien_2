@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { bootcamp2_backend } from 'declarations/bootcamp2_backend';
+import Blog from './components/Blog'
 
 function App() {
   const [greeting, setGreeting] = useState('');
@@ -30,6 +31,7 @@ function App() {
         <button type="submit">Click Me!</button>
       </form>
       <section id="greeting">{greeting}</section>
+      <Blog />
     </main>
   );
 }
